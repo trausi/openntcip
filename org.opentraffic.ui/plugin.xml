@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="org.opentraffic.ui.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="OpenTraffic UI Perspective"
+            class="org.opentraffic.ui.Perspective"
+            id="org.opentraffic.ui.perspective">
+      </perspective>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.opentraffic.ui.application"
+            name="OpenTraffic"/>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="org.opentraffic.ui.HiddenView"
+            id="org.opentraffic.ui.HiddenView"
+            name="Hidden"/>
+   </extension>
+
+</plugin>
