@@ -1,0 +1,1 @@
+The OpenNTCIP Project contributes open source software to the Transportation Community for the configuration,control and status of transportation devices such as traffic controllers, message signs, and video cameras using protocols as defined in the National Transportation Communications for ITS Protocol standards.
